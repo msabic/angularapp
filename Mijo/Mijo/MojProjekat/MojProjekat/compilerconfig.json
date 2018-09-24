@@ -1,0 +1,12 @@
+﻿[
+  {
+    "outputFile": "Css/Desktop/compiled-style.css",
+    "inputFile": "Content/style.less",
+    "minify": {
+      "enabled": false,
+      "commentMode": "none"
+    },
+    "includeInProject": false
+  }
+
+]

@@ -1,0 +1,57 @@
+﻿
+@model LoginViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="login-wrap">
+
+    <h2>
+       Login
+    </h2>
+
+    <section id="loginForm">
+
+        @using (Html.BeginRouteForm("LoginPostbackLink", null, FormMethod.Post, new { @role = "form" }))
+        {
+            @Html.AntiForgeryToken()
+
+            if (!ViewData.ModelState.IsValid)
+            {
+                <div class="error-box">
+                    @Html.ValidationSummary(false)
+                </div>
+
+                <br />
+            }
+
+            <div>
+                @Html.DisplayNameFor(m => m.Username)
+                <div>
+                    @Html.TextBoxFor(m => m.Username, new { @placeholder ="username" })
+                    @Html.ValidationMessageFor(m => m.Username)
+
+                </div>
+            </div>
+
+            <div>
+                @Html.DisplayNameFor(m => m.Password)
+                <div>
+                    @Html.PasswordFor(m => m.Password, new { @placeholder = "password", @autocomplete = "new-password" })
+                    @Html.ValidationMessageFor(m => m.Password)
+
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Login
+            </button>
+
+         
+        }
+
+
+    </section>
+
+</div>

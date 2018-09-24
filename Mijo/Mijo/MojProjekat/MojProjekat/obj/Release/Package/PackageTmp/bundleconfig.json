@@ -1,0 +1,12 @@
+﻿[
+
+  {
+    "outputFileName": "css/desktop/style.css",
+    "inputFiles": [
+      "css/desktop/compiled-style.css"
+    ],
+    "includeInProject": true
+  }
+ 
+
+]

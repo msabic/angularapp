@@ -1,0 +1,70 @@
+﻿@import "colors";
+
+/*
+    Global input style (default)
+*/
+
+input, select {
+    display: block;
+    width: 300px;
+    font-size: 13px;
+    border: none;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    -moz-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    padding: 8px 6px;
+    background: @color-input-bg;
+    color: @color-input-text;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    box-sizing: border-box;
+}
+
+input[type=checkbox] {
+    width: initial;
+    display: initial;
+    margin: 3px;
+}
+
+/*
+    Global button style (default)
+*/
+
+.btn {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-radius: 4px;
+    border-style: solid none none none;
+    font-size: 12px;
+    display: block;
+    width: 100%;
+    -webkit-transition: all, 0.2s, ease-in-out;
+    -o-transition: all, 0.2s, ease-in-out;
+    -moz-transition: all, 0.2s, ease-in-out;
+    transition: all, 0.2s, ease-in-out;
+    text-align: center;
+    cursor: pointer;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 14px;
+    padding: 8px;
+}
+
+/*
+    Button primary - Used for main actions on site
+*/
+.btn-primary:hover {
+    background: @color-btn-hover;
+    border-color: @color-btn-hover;
+}
+
+.btn-primary {
+    color: @color-btn-text;
+    background: @color-btn-primary;
+    border-top-color: @color-btn-border;
+}
